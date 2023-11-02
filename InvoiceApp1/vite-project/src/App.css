@@ -1,0 +1,285 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.c
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.main-body{
+ 
+  display: flex;
+  align-items: flex-start;
+  
+  
+}
+
+.wrapper{
+  background-color: rgb(9, 9, 44);
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+/* side nav */
+
+.nav-main{
+  height: 97vh;
+  width: 100px;
+  background-color: rgb(60, 60, 123);
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(60, 60, 123);
+  border-radius: 5px;
+
+}
+
+.wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30rem;
+}
+
+.wrapp{
+  height: 20vh;
+}
+
+.inv{
+  margin-left: 20rem;
+  /* color:; */
+}
+
+.profile img{
+  border: 5px solid rgb(60, 60, 123);
+  border-radius: 50px;
+}
+
+.logo img{
+  border: 1px solid rgb(60, 60, 123);
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/* in body */
+.body-main{
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px;
+  padding: 20px;
+  gap: 600px;
+  flex-grow: 1;
+  height: 80vh;
+  
+}
+
+.buto{
+  color: #000;
+  border: 10px solid rgb(60, 60, 123);
+  background-color: rgb(60, 60, 123);
+  border-radius: 30px;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  margin: 6px;
+}
+
+
+.invoice h1{
+  color: #ffff;
+}
+
+.filters{
+  margin-left: 20rem;
+}
+
+.display{
+  float: right;
+  color: aliceblue;
+
+}
+
+.array{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  border: 10px solid rgb(9, 9, 44);
+  color: aliceblue;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(24, 52, 105, 0.774);
+  border: 8px solid rgba(24, 52, 105, 0.774);
+  border-radius: 12px;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 1.2rem;
+  color: #ffff;
+  padding: 6px;
+}
+
+
+/* status */
+
+.pending{
+  background-color: rgba(99, 42, 42, 0.74);
+  color: red;
+}
+
+
+/* modal and form */
+
+/* CSS for Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: rgb(60, 60, 123);
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal h2{
+  color: #ffff;
+  margin: 16px;
+  background-color: grey;
+  text-align: center;
+  border: 5px solid grey;
+  padding: 7px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+form{
+  padding: 25px;
+  border: 5px solid rgb(60, 60, 123);
+}
+
+input{
+  margin: 10px;
+  padding-right: 45px;
+  padding-top: 12px;
+  background: rgba(90, 83, 88, 0.795);
+  border: 3px solid rgb(223, 56, 214);
+  border-radius: 6px;
+}
+
+label{
+  color: #ffff;
+  padding: 4px;
+  font-size: 1.2rem;
+}
+
+
+select{
+  background-color: rgb(235, 160, 68);
+  border: 4px solid rgb(235, 160, 68);
+  border-radius: 12px;
+
+}
+
+.cancel{
+  background-color: gray;
+  border: 8px solid gray;
+  border-radius: 29px;
+  color: #2b2727;
+}
+
+.save{
+  background-color: brown;
+  border: 8px solid brown;
+  border-radius: 29px;
+  color: #ffff;
+}
+
+.btns{
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* Dark mode styles */
